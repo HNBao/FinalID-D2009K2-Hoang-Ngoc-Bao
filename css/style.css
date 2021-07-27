@@ -1,0 +1,421 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 1470px;
+	margin: 0 auto;
+	position: relative;
+}
+.header{
+	width: 100%;
+	height: 50px;
+	padding: 40px;
+	box-sizing: border-box;
+	display: flex;
+	position: absolute;
+/*	background: red;*/
+	z-index: 10;
+}
+.logo{
+	width: 20%;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.logo a{
+	text-decoration: none;
+	color: white;
+	line-height: 50px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+}
+.menu{
+	width: 80%;
+}
+.menu ul{
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+.menu ul li{
+/*	margin: 0 40px;*/
+}
+.menu ul li a{
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	line-height: 50px;
+	letter-spacing: 3px;
+	display: block;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.menu ul li a:hover{
+	color: black;
+	background:rgba(87,194,236,1.00);
+}
+.submenu{
+	display: block !important;
+	overflow: hidden;
+	height: 0px;
+	transition-duration: 0.5s;
+}
+.menu ul li:hover .submenu{
+	height: 300%;
+	transition: 0.5s;
+	transition-duration: 0.8s;
+}
+.banner{
+	height: 100vh;
+/*	width: 100%;*/
+	position: relative;
+/*	background: green;*/
+}
+.banner video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.search{
+	position: absolute;
+	top: 50%;
+	left: 38%;
+/*	background: yellow;*/
+	height: 100px;
+	width: 500px;
+}
+.search input{
+	padding: 20px 200px 20px 10px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #C8C8C8;
+}
+.icon{
+	position: absolute;
+	top: 52%;
+	left: 58%;
+}
+.icon a{
+	color: rgba(87,194,236,1.00);
+	font-size: 25px;
+}
+.icon a:hover{
+	color: rgba(21,21,21,0.89);
+}
+.sec2{
+	width: 100%;
+/*	background: pink;*/
+	display: flex;
+	justify-content: space-around;
+	margin: 250px 0;
+}
+.sec2{
+	position: relative;
+}
+.title{
+	position: absolute;
+	width: 500px;
+	bottom: 360px
+}
+.boximg{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	display: flex;
+}
+.boximg img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	transition-duration: 0.5s;
+}
+.boximg .content{
+	width: 200px;
+	height: 200px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	position: absolute;
+	padding-top: 50px;
+	box-sizing: border-box;
+	visibility: hidden;
+	opacity: 0;
+	background: rgba(233,233,233,0.78);
+}
+.boximg:hover .content{
+	visibility: visible;
+	transition-duration: 1.5s;
+	opacity: 1;
+}
+.boximg:hover img{
+	border-radius: 0%;
+	transition-duration: 0.5s;
+}
+.imgmid{
+	width: 100%;
+	height: 400px;
+	background: url("../img/Thailand _ What You Need to Know - To Vogue or Bust.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.sec3{
+	margin: 200px 0;
+}
+.sec3top{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 200px;
+	box-sizing: border-box;
+	margin-bottom: 100px;
+}
+.sec3top .contentleft{
+	font-size: 50px;
+	width: 50%;
+	margin-right: 10px;
+	text-align: right;
+}
+.sec3 a{
+	text-decoration: none;
+	color: black;
+}
+.sec3 a:hover{
+	color: rgba(87,194,236,1.00);
+}
+.sec3top img{
+	height: 500px;
+	width: 50%;
+	margin-left: 10px;
+}
+.sec3down{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 200px;
+	box-sizing: border-box;
+}
+.sec3down .contentright{
+	font-size: 50px;
+	width: 50%;
+	margin-left: 10px;
+}
+.sec3down img{
+	height: 500px;
+	width: 50%;
+	margin-right: 10px;
+}
+.sec4{
+	display:flex;
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+h1{
+	position: absolute;
+	top: 0%;
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+}
+.sec4 img{
+	border-radius: 10px;
+}
+.sec4 img:hover{
+	opacity: 80%;
+}
+.imgleft{
+/*	width: 20%;*/
+}
+.imgleft img{
+/*	width: 100%;*/
+	height: 600px;
+}
+.imgright{
+	width: 80%;
+}
+.imgrtop{
+	height: 300px;
+	display: flex;
+	margin-bottom: 20px;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+.imgrtop img{
+	height: 100%;
+}
+.imgrdown{
+	height: 280px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+.imgrdown img{
+	height: 100%;
+/*	margin-right: 20px*/
+}
+.sec5{
+	display: flex;
+	position: relative;
+	padding-top: 100px;
+	box-sizing: border-box;
+	margin-top: 120px;
+	justify-content: space-between;
+}
+.newsleft{
+	width: 48%;
+}
+.newsleftimg{
+	width: 100%;
+	overflow: hidden;
+	height: 397px;
+	position: relative;
+}
+.newsleftimg img{
+	width: 100%;
+	position: absolute;
+	bottom: 1px;
+}
+.newsright{
+	width: 48%;
+}
+.newsright img{
+	width: 100%;
+}
+.news{
+	margin-top: 13px;
+}
+.news a{
+	text-decoration: none;
+	color: rgba(87,194,236,1.00);
+}
+.news h3{
+	font-size: 24px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.news span{
+	color: grey;
+}
+.footer{
+	width: 100%;
+	margin-top: 200px;
+	height: 600px;
+	background: rgba(27,23,23,0.88);
+}
+.end{
+	padding-top: 130px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.ft{
+	width: 33%;
+/*	height: 200px;*/
+/*	background: blue;*/
+	text-align: center;
+}
+.ft1{
+	color: white;
+}
+.ft1 h2{
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+.ft1 span{
+	font-size: 15px;
+}
+.ft2{
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+.ft2 h2{
+	color: white;
+	font-size: 35px;
+}
+.ft2 .logo{
+	display: flex;
+	margin: 40px 0;
+	justify-content: center;
+	width: 100%;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+.lg{
+	margin: 0 20px;
+	font-size: 50px;
+	color: white;
+}
+.logofb{
+	height: 50px;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+.logofb:hover{
+	color: rgba(5,20,159,1.00);
+	background: white;
+	transition: 0.5s;
+}
+.logotw{
+	height: 50px;
+	border-radius: 20%;
+	transition: 0.5s;
+}
+.logotw:hover{
+	color: rgba(10,167,255,1.00);
+	background: white;
+	transition: 0.5s;
+}
+.logoins{
+	height: 50px;
+	border-radius: 20%;
+	transition: 0.5s;
+}
+.logoins:hover{
+  	background: #d6249f;
+ 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	transition: 0.5s;
+}
+.ft3 h2{
+	color: white;
+	font-size: 35px;
+}
+.ft3 input{
+	padding: 10px 80px 10px 6px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	margin:  20px 0;
+}
+button{
+	background: rgba(87,194,236,1.00);
+	border: 1px solid #6B6B6B;
+	border-radius: 4px;
+	padding: 15px;
+	width: 250px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+button:hover{
+	background: rgba(0,46,146,1.00);
+}
+.rend{
+	margin-top: 100px;
+	text-align: center;
+	width: 100%;
+	border-top: 1px solid white;
+}
+.rend .logo{
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+.rend .cpr{
+	color: grey;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
